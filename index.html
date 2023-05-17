@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+        <!-- start Navbar -->
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/img/logo@2x.png" alt="logo">
+                <div class="logo-text ms-2">
+                  <span>Weather</span>
+                  <h6>tagline goes here</h6>
+                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Live Cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- end Navbar -->
+
+        <!-- start search -->
+        <section class="search">
+          <div class="container">
+        <div class=" position-relative search-input">
+          <input id="search" class="rounded-pill form-control"
+           type="text" 
+           placeholder="Find you location...">
+              <div class="btn-search position-absolute">
+                <button id="find" class=" btn btn-primary rounded-pill find px-4">
+                  Find
+                </button>
+              </div>
+        </div>
+          </div>
+        </section>
+        <!-- end search -->
+
+        <!-- start Weather -->
+        <section class="weather">
+          <div class="container">
+            <div class="weather-card">
+            <div class="row  gx-0">
+
+
+              <!-- card 1 -->
+     <div class="col-lg-4 col-md-12">
+            <div class="weather-day d-flex justify-content-between px-4">
+                <span id="today"></span>
+                <span id="todayDate"></span>
+            </div>
+
+       <div class="weather-content">
+
+              <h4 id="locations" class="mt-3 px-4 text-white"></h4>
+              <div class="degree d-flex justify-content-between text-white px-4">
+                <div class="my-3">
+                  <h2 id="degree" class=" d-inline-block">
+                    <h2 class=" d-inline-block"><sup>o</sup>C</h2>
+                  </h2>
+                </div>
+                
+                <img id="todayIcon" width="100"/>
+              </div>
+
+              <span id="todayDesc" class="cloud px-4"></span>
+
+              <div class="weather-status px-4 d-flex my-4 text-white">
+                <div class=" me-4">
+                  <img src="assets/img/icon-umberella-2x.png" class=""/>
+                  <span id="humidty"></span><span>%</span>
+                </div>
+                
+               <div class="me-4">
+                <img src="assets/img/icon-wind-2x.png" class=""/>
+                <span id="wind"></span><span>km/h</span>
+               </div>
+               <div class="me-4">
+                <img src="assets/img/icon-compass-2x.png" class=""/>
+                <span id="compass"></span>
+               </div>
+             
+              </div>
+
+
+            </div>
+
+      </div>
+
+
+              <!-- card 2 -->
+    <div class="col-lg-4 col-md-12 card-two cards">
+                <div class="weather-day text-center">
+                  <span class="nextDay"></span>
+                </div>
+             
+         <div class="weather-content">
+
+                <div class="degree-column d-flex justify-content-center flex-column text-white px-4">
+                    <img class="nextDayIcon" alt="sunny">
+                    <div class=" mt-3">
+                      <h3 class="maxDegree d-inline-block"></h3>
+                      <h3 class=" d-inline-block"><sup>o</sup>C</h3>
+                      <div class=" text-center">
+                        <p class="minDegree text-muted fs-5 d-inline-block"></p>
+                        <sup class=" fs-6">o</sup>
+                      </div>
+                      
+                    </div>
+                    
+                    <span class="cloud px-4 nextDayDesc"></span>
+                </div>
+
+
+         </div>
+    </div>
+
+              <!-- card 3 -->
+    <div class="col-lg-4 col-md-12 cards">
+          <div class="weather-day d-flex justify-content-center px-4 ">
+            <span class="nextDay"></span>
+        </div>
+
+        <div class="weather-content">
+                <div class="degree-column d-flex justify-content-center flex-column text-white px-4">
+                    <img class="nextDayIcon" alt="sunny">
+                    <div class=" mt-3">
+                      <h3 class="maxDegree d-inline-block"></h3>
+                      <h3 class=" d-inline-block"><sup>o</sup>C</h3>
+                      <div class=" text-center">
+                        <p class="minDegree text-muted fs-5 d-inline-block"></p>
+                        <sup class=" fs-6">o</sup>
+                      </div>
+                      
+                    </div>
+                    
+                    <span class="cloud px-4 nextDayDesc"></span>
+                </div>
+
+
+         </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+            </div>
+            </div>
+       </div>
+     </section>
+        <!-- end Weather -->
+
+
+
+
+
+
+        <!-- start Footer -->
+    <footer>
+       <div class="container">
+        <div class="row">
+              <div class="col-md-7">
+
+        <div class=" position-relative search-input">
+          <input class="rounded-pill form-control"
+          type="text" 
+          placeholder="Find you location...">
+                <div class="btn-search position-absolute">
+                  <button class=" btn btn-primary rounded-pill px-4">
+                    Find
+                  </button>
+                 </div>
+
+                      
+        </div>
+
+                </div>
+
+              <div class="col-md-5">
+
+          <div class="social">
+           <a href="#"> <i class="d-flex justify-content-center align-items-center fa-brands fa-facebook-f "></i></a> 
+           <a href="#"> <i class="d-flex justify-content-center align-items-center fa-brands fa-twitter"></i></a>
+           <a href="#"> <i class="d-flex justify-content-center align-items-center fa-brands fa-google-plus-g"></i></a>
+           <a href="#"> <i class="d-flex justify-content-center align-items-center fa-brands fa-pinterest"></i></a>
+         </div>
+
+
+              </div>
+
+              <p class="footer-text mt-5">
+                Copyright 2023 Company name. Designed by Themezy. All rights reserved
+               </p>
+
+        </div>
+     </div>
+    </footer>
+        <!-- end Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

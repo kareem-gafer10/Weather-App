@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+:root {
+  --main-color: #009ad8;
+  --white-color: #fff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgb(30, 32, 43);
+}
+a {
+  text-decoration: none;
+}
+input {
+  background-color: rgb(30, 32, 43) !important;
+  outline: none !important;
+  border: none !important;
+  padding: 15px !important;
+  color: var(--white-color) !important;
+}
+.btn-search {
+  right: 8px;
+  top: 8px;
+}
+
+/* start Navbar */
+.navbar .navbar-toggler {
+  box-shadow: none;
+}
+.navbar .navbar-brand img {
+  width: 60px;
+}
+.navbar .logo-text span {
+  color: var(--white-color);
+  font-weight: 600;
+}
+.navbar .logo-text h6 {
+  color: #bfc1c8;
+  font-size: 12px;
+}
+
+.navbar .nav-item {
+  margin-left: 25px;
+}
+
+.navbar .nav-link,
+.navbar .fa-bars {
+  color: var(--white-color);
+  border: 2px solid transparent;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 5px 25px !important;
+  transition: 0.3s ease-in;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .fa-bars:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-nav {
+    margin-top: 20px !important;
+    background: rgb(38, 41, 54);
+    border-radius: 5px;
+    text-align: center;
+  }
+  .navbar .nav-item {
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .navbar .nav-link {
+    border: none;
+    margin: 15px 0;
+  }
+}
+/* end Navbar */
+
+/* start Search */
+.search {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  padding: 90px 0;
+}
+/* end Search */
+
+/* start Weather */
+.weather {
+  transform: translateY(-100px);
+}
+.weather .weather-card {
+  background: rgb(50, 53, 68);
+  border-radius: 10px;
+}
+.weather .weather-content {
+  padding: 30px 0;
+}
+.weather .weather-day {
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  color: var(--white-color);
+}
+.weather .degree h2 {
+  font-size: 80px;
+  font-weight: bold;
+}
+.weather .degree-column {
+  flex-direction: column;
+  align-items: center;
+}
+.weather .cloud {
+  color: var(--main-color);
+  font-size: 18px;
+}
+.weather .weather-status img {
+  width: 20px;
+}
+.weather .weather-status span {
+  font-size: 14px;
+}
+/* ------------------- */
+.weather .card-two {
+  background-color: rgb(38, 41, 54);
+}
+
+
+
+/* end Weather */
+
+/* start Footer */
+footer {
+  background: rgb(38, 41, 54);
+  padding: 70px 0;
+}
+footer .footer-text {
+  color: #bfc1c8;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social i {
+  color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease-in;
+  background-color: rgb(30, 32, 43);
+  margin: 0 5px;
+}
+footer .social i:hover {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+@media (max-width : 768px){
+  footer .social{
+    margin-top: 20px;
+  }
+}
+/* end Footer */
